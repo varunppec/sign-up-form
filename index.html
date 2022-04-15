@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="root">
+      <div class="background">
+        <div class="logo">
+          <img
+            src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png"
+          />
+          <div>Odin</div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="description">
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams. Sign up now
+          to get started.
+        </div>
+        <div class="motto">You know you want to.</div>
+        <form action="/" class="form">
+          <div class="mainform">
+            <div class="formcaption">Let's do this!</div>
+            <div class="forminfo">
+              <div class="firstname">
+                <label for="fname">first name</label>
+                <input required id="fname" placeholder="James" />
+              </div>
+              <div class="lastname">
+                <label for="lname">last name</label>
+                <input required id="lname" placeholder="Charles" />
+              </div>
+              <div class="email">
+                <label for="email">email</label>
+                <input required id="email" placeholder="james@example.com" />
+              </div>
+              <div class="phoneno">
+                <label for="phone">phone number</label>
+                <input
+                  type="tel"
+                  pattern="[0-9]{10}"
+                  id="phone"
+                  placeholder="9988876543"
+                />
+              </div>
+              <div class="password">
+                <label for="password">password</label>
+                <input type="password" class="error" id="password" />
+              </div>
+              <div class="confpassword">
+                <label for="cpassword">confirm password</label>
+                <input type="password" class="error" id="cpassword" />
+              </div>
+            </div>
+          </div>
+          <div class="button">
+            <button type="button">Login</button>
+          </div>
+          <div class="account">
+            Already have an account?
+            <a href="https://www.youtube.com">Log in</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

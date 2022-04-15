@@ -1,0 +1,188 @@
+body {
+    margin: 0;
+    
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    min-height: 100vh;
+    letter-spacing: 0.08rem;
+    background-color: white;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+:root {
+    --desc-and-moto-fontsize: 1.5rem;
+    --button-color: #596D48;
+    --input-color: #dce0e7;
+}
+
+@font-face {
+    font-family: norsebold;
+    src: url("Norse-Bold.otf");
+}
+
+.root {
+    display: flex;
+    width: auto;
+    justify-content: center;
+}
+
+img {
+   max-height: 220px;
+}
+
+.logo > div {
+    font-size: 4rem;
+}
+
+.logo {
+    color: white;
+    width: calc(100% - 42px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-family: norsebold;
+}
+.background {
+    background-image: url("image.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: calc(0.4 * 100vw);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.description, .motta {
+   text-overflow: ellipsis;
+}
+
+.description {
+    font-weight: bold;
+    margin: 30px 0px;
+    font-size: var(--desc-and-moto-fontsize);
+    width: calc(100% - 30px);
+}
+
+.motto {
+    font-size: var(--desc-and-moto-fontsize);
+    font-weight: bold;
+    margin-bottom: 40px;
+    width: calc(100% - 30px);
+}
+
+.form {
+    background-color: white;
+    border-radius: 5px;
+    max-width: 90%;
+    padding: 15px;
+}
+
+.mainform {
+    margin-bottom: 20px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.forminfo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.forminfo > * {
+    display: flex;
+    flex-direction: column;
+    min-width: 49%;
+}
+
+input {
+    max-width: calc(100% - 30px);
+    min-height: 25px;
+    margin: 2px 0px;
+    border: 1px solid var(--input-color);
+    border-radius: 3px;
+    padding: 2px 5px;
+    outline: none;
+}
+
+.formcaption {
+    font-size: var(--desc-and-moto-fontsize);
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+button {
+    background-color: var(--button-color);
+    border: none;
+    font-size: 1.2rem;
+    min-width: 180px;
+    min-height: 40px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+button:focus, button:hover {
+    opacity: 0.9;
+}
+
+a {
+    color: var(--button-color);
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover, a.focus {
+    color: blue;
+}
+
+input:focus {
+    border-color: blue;
+    box-shadow: 0px 1px blue;
+}
+
+.error {
+    border-color: red;
+}
+
+label {
+    text-transform: uppercase;
+    font-size: 0.7rem;
+}
+
+@media only screen and (max-width: 665px){
+    .root {
+        min-height: 100vh;
+    }
+    
+    .background {
+        display: none;
+    }
+
+    .container {
+        background-image: url("image.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .description, .motto {
+        color: white;
+    }
+    
+}
